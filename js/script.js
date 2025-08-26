@@ -1,5 +1,7 @@
 //elements
-
+heart - count;
+coin - count;
+copy - count;
 //call button functionality
 
 //copy button functionality

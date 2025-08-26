@@ -1,0 +1,279 @@
+/* ********************************************** */
+/* Global CSS */
+
+:root {
+  --primary-btn-color: #00a63e;
+  --secondary-btn-color: #41ff6b1a;
+  --primary-text: #111111;
+  --secondary-text: #5c5c5c;
+  --border: #d4d6d5;
+  --int: "Inter", sans-serif;
+}
+
+/* ********************************************** */
+/*common css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--int);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-text);
+  line-height: 27px;
+}
+.container {
+  margin: 0 8%;
+}
+
+/* ********************************************** */
+/* header start */
+.header {
+  margin: 0 8%;
+  padding: 5px 0;
+  height: 90px;
+}
+nav,
+.logo,
+.nav-tabs,
+.hotline-icon,
+.hotline-actions,
+.sidebar-title,
+.sidebar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 220px;
+  gap: 10px;
+}
+.logo_img {
+  width: 150px;
+}
+.logo_img img {
+  width: 100%;
+}
+.heading {
+  font-size: 24px;
+  color: #006747;
+}
+.nav-tabs {
+  gap: 20px;
+}
+.nav-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+  height: 40px;
+  padding: 12px 36px;
+  border-radius: 50px;
+  background: var(--secondary-btn-color);
+}
+.nav-img {
+  width: 20px;
+}
+.nav-img img {
+  display: block;
+  width: 20px;
+  text-align: center;
+}
+.copy-show-btn,
+.btn {
+  font-family: var(--int);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  line-height: 24px;
+  background: var(--primary-btn-color);
+  border: 1px solid transparent;
+}
+
+/* ********************************************** */
+main {
+  background: #effdf0;
+}
+/* banner start */
+.banner {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),
+    rgba(0, 103, 71, 1) 50%,
+    rgba(1, 50, 35, 1) 100%
+  );
+}
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.banner_img {
+  width: 150px;
+}
+.banner_img img {
+  width: 100%;
+}
+.banner-title {
+  margin: 20px 0 25px 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.banner-infos {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+/* ********************************************** */
+/* directory start */
+.directory {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  width: 90%;
+  margin: auto;
+}
+/* ********************************************** */
+/* hotlines start */
+.hotlines {
+  grid-column: span 9;
+  display: grid; /* inside grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 equal sections */
+  gap: 15px;
+}
+.hotline-column {
+  margin-bottom: 20px;
+  padding: 20px 15px;
+  width: 295px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.15);
+  background: white;
+  border-radius: 12px;
+}
+.hotline-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: rgba(255, 227, 226, 1);
+  width: 50px;
+  height: 50px;
+}
+.hotline-img img {
+  width: 30px;
+}
+.hotline-heart i {
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.33s;
+}
+.hotline-heart i:hover {
+  transform: scale(1.3);
+}
+.hotline-title {
+  margin: 20px 0 5px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-text);
+  line-height: 28px;
+}
+.hotline-number {
+  margin: 15px 0 5px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+.hotline-badge {
+  margin: 15px 0;
+  width: 110px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--secondary-text);
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  background: #f2f2f2;
+}
+
+.hotline-actions {
+  gap: 10px;
+}
+.btn {
+  cursor: pointer;
+  transition: all 0.33s;
+}
+.btn:hover {
+  color: var(--primary-btn-color);
+  background: white;
+  border: 1px solid var(--primary-btn-color);
+}
+.btn-copy {
+  width: 160px;
+  height: 40px;
+  font-family: var(--int);
+  font-size: 16px;
+  color: var(--secondary-text);
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: white;
+}
+.btn-call {
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+}
+.btn-copy i,
+.btn-call i,
+.sidebar-heading i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+/* ********************************************** */
+/* history start */
+.history {
+  grid-column: span 3;
+  padding: 0 15px;
+}
+.sidebar-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-text);
+  line-height: 28px;
+}
+.clear-btn {
+  width: 90px;
+}
+.sidebar-content {
+  margin: 15px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+}
+.history-hotline {
+  width: 140px;
+}
+.history-title {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-text);
+  line-height: 24px;
+}
+.hisotry-date p {
+  font-size: 14px;
+}
