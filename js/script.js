@@ -7,9 +7,8 @@ const callBtns = document.querySelectorAll('.btn-call');
 const hotlineHearts = document.querySelectorAll('.hotline-heart');
 const clearBtn = document.querySelector('.clear-btn');
 const sidebarContainer = document.querySelector('.sidebar-container');
-console.log(sidebarContainer);
-//call button functionality
 
+//call button functionality
 callBtns.forEach(callBtn =>
   callBtn.addEventListener('click', function (e) {
     if (+coinCount.textContent >= 20) {
@@ -44,7 +43,7 @@ callBtns.forEach(callBtn =>
 
       //notifications
       alert(`📞 Calling ${hotlineCenter} ${centerNumber}...`);
-    } else alert('less');
+    } else alert(`❌ Sorry! You don't have enough coins to make this call. Please recharge your account.`);
   })
 );
 //copy button functionality

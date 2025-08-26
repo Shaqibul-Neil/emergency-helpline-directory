@@ -31,8 +31,7 @@ body {
 /* ********************************************** */
 /* header start */
 .header {
-  margin: 0 8%;
-  padding: 5px 0;
+  margin: 5px 8%;
   height: 90px;
 }
 nav,
@@ -46,12 +45,16 @@ nav,
   justify-content: space-between;
   align-items: center;
 }
+nav {
+  padding: 10px 0;
+}
 .logo {
   width: 220px;
   gap: 10px;
 }
 .logo_img {
   width: 150px;
+  height: 80px;
 }
 .logo_img img {
   width: 100%;
@@ -151,10 +154,11 @@ main {
 /* hotlines start */
 .hotlines {
   grid-column: span 9;
-  display: grid; /* inside grid */
-  grid-template-columns: repeat(3, 1fr); /* 3 equal sections */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
+
 .hotline-column {
   margin-bottom: 20px;
   padding: 20px 15px;
@@ -192,7 +196,7 @@ main {
 }
 .hotline-number {
   margin: 15px 0 5px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--primary-text);
 }
@@ -277,3 +281,88 @@ main {
 .date {
   font-size: 14px;
 }
+/*
+<!-- <!-- 2nd row start -->
+          
+            <!-- 1st hotline column start -->
+            <div class="hotline-column">
+              <div class="hotline-icon">
+                <div class="hotline-img">
+                  <img src="./assets/electricity.png" alt="" />
+                </div>
+                <div class="hotline-heart">
+                  <i class="fa-solid fa-heart" style="color: #00a63e"></i>
+                </div>
+              </div>
+              <div class="hotline-content">
+                <h4 class="hotline-title">Electricity Helpline</h4>
+                <p>Electricity Outage</p>
+                <h3 class="hotline-number">16216</h3>
+                <button class="hotline-badge">Electricity</button>
+              </div>
+              <div class="hotline-actions">
+                <button class="btn btn-copy">
+                  <i class="fa-solid fa-copy"></i>Copy
+                </button>
+                <button class="btn btn-call">
+                  <i class="fa-solid fa-phone"></i>Call
+                </button>
+              </div>
+            </div>
+            <!-- 1st hotline column end -->
+
+            <!-- 2nd hotline column start -->
+            <div class="hotline-column">
+              <div class="hotline-icon">
+                <div class="hotline-img">
+                  <img src="./assets/brac.png" alt="" />
+                </div>
+                <div class="hotline-heart">
+                  <i class="fa-solid fa-heart" style="color: #00a63e"></i>
+                </div>
+              </div>
+              <div class="hotline-content">
+                <h4 class="hotline-title">Brac Helpline</h4>
+                <p>Brac</p>
+                <h3 class="hotline-number">16445</h3>
+                <button class="hotline-badge">NGO</button>
+              </div>
+              <div class="hotline-actions">
+                <button class="btn btn-copy">
+                  <i class="fa-solid fa-copy"></i>Copy
+                </button>
+                <button class="btn btn-call">
+                  <i class="fa-solid fa-phone"></i>Call
+                </button>
+              </div>
+            </div>
+            <!-- 2nd hotline column end -->
+
+            <!-- 3rd hotline column start -->
+            <div class="hotline-column">
+              <div class="hotline-icon">
+                <div class="hotline-img">
+                  <img src="./assets/railway.png" alt="" />
+                </div>
+                <div class="hotline-heart">
+                  <i class="fa-solid fa-heart" style="color: #00a63e"></i>
+                </div>
+              </div>
+              <div class="hotline-content">
+                <h4 class="hotline-title">Bangladesh Railway Helpline</h4>
+                <p>Bangladesh Railway</p>
+                <h3 class="hotline-number">163</h3>
+                <button class="hotline-badge">Travel</button>
+              </div>
+              <div class="hotline-actions">
+                <button class="btn btn-copy">
+                  <i class="fa-solid fa-copy"></i>Copy
+                </button>
+                <button class="btn btn-call">
+                  <i class="fa-solid fa-phone"></i>Call
+                </button>
+              </div>
+            </div>
+            <!-- 3rd hotline column end -->
+          
+*/
