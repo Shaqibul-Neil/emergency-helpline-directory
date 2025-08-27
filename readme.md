@@ -181,7 +181,8 @@ for example:
 ```
 
 <br>
-Here if we click on the button we'll see in our console that all three console.log has been published.<br>
+
+Here if we click on the button we'll see in our console that all **three console.log** has been published.<br><br>
 
 ```text
 Child clicked
@@ -191,13 +192,17 @@ Grandparent clicked
 
 <br>
 
-This happens because when we clicked on the button it first goes to its parent Div then to its grandparent and it continues to travel. This process is known as event bubbling.
+This happens because when we clicked on the button it **first goes to its parent** Div **then** to its **grandparent** and it **continues** to travel. This process is known as **event bubbling**.
 
 <hr />
 <hr />
 
-❓4️⃣ What is Event Delegation in JavaScript? Why is it useful?<br /><br />
-✍🏻<br />
+❓4️⃣ What is Event Delegation in JavaScript? Why is it useful?<br><br>
+✍🏻<br>
+Delegation means to **transfer the responsibility** of a task from **one person to another**. So in Javascript, Event Delegation is an event being delegated from **child to it's parent**. **Parent** Element **handles** the event of **all its children**. Like if we had **multiple children** and all of them are **bound to some events** then we **don't add event listener** to all of the children instead we add **one event listener to the parent**, who in turns **listens** for the event in the **children**. We can **access** exactly where the **event fired** by using **e.target**. It will give the exact element where the event occurred.<br><br>
+
+🎯**Why is it useful**<br><br>
+It helps us maintain our code, improves readability and also makes our code clean. If we don't use event delegation then lets say we had hundreds of child element of a parent and all of them are bound to some event then we'd have to add event listener to all of them. It could affect our speed of the page and take too much space. Instead we identify the parent and add event listener to it and from there using e.target and event bubbling we can identify the exact children where the event occurred. This process also helps us when there is no children to attach event handler to. When page loads or when we need to dynamically create some action based on certain actions. This way we can prevent bugs.
 
 <hr />
 <hr />
@@ -205,7 +210,3 @@ This happens because when we clicked on the button it first goes to its parent D
 ❓5️⃣ What is the difference between preventDefault() and stopPropagation()
 methods?<br /><br />
 ✍🏻<br />
-
-```
-
-```
