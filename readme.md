@@ -1,6 +1,6 @@
-## ❓1️⃣ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?<br><br>
+## 1️⃣❓What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?<br><br>
 
-✍🏻 <br>
+## ✍🏻 <br>
 
 ### 🎯**getElementById ::** <br><br>
 
@@ -11,7 +11,7 @@ for example:<br>
 const callBtnR = document.getElementById('call-btnR');
 ```
 
-\*When selecting elements by id, **we don't have to write the id selector(#)\***<br><br>
+_When selecting elements by id, **we don't have to write the id selector(#)**_<br><br>
 
 ### 🎯**getElementsByClassName ::**<br><br>
 
@@ -23,7 +23,7 @@ for example:<br>
 const callBtnsR = document.getElementsByClassName('call-btnR');
 ```
 
-When selecting elements by class, we **don't have to write the class selector(.)**<br><br>
+_When selecting elements by class, we **don't have to write the class selector(.)**_<br><br>
 
 ### 🎯**querySelector ::**<br><br>
 
@@ -37,7 +37,7 @@ const callBtnR = document.querySelector('.call-btnR');
 
 This will give the first element from the html that posses the 'call-btn' class name.<br>
 
-When selecting elements by querySelector, we **have to write the css selector like . or #**<br><br>
+_When selecting elements by querySelector, we **have to write the css selector like . or #**_<br><br>
 
 ### 🎯**querySelectorAll ::**<br><br>
 
@@ -51,14 +51,15 @@ const callBtnsR = document.querySelectorAll('.call-btnR');
 
 This will give all the element from the html that posses the 'call-btn' class name.<br>
 
-When selecting elements by querySelectorAll, we **have to write the css selector like . or #**<br>
+_When selecting elements by querySelectorAll, we **have to write the css selector like . or #**_<br>
 
 <hr>
 <hr>
 
-## ❓2️⃣ How do you create and insert a new element into the DOM?<br><br>
+## 2️⃣❓How do you create and insert a new element into the DOM?<br><br>
 
-✍🏻 <br>
+## ✍🏻 <br>
+
 We can create and insert a new element into the DOM in **three ways**:<br>
 
 ### 🎯**Using Create element ::**<br><br>
@@ -122,25 +123,25 @@ const sidebarContainerR = document.getElementById('sidebar-containerR');
 sidebarContainerR.insertAdjacentHTML('afterbegin', HTMLR);
 ```
 
-In the sidebarContainer there will be now a child named sidebar-content. And it will be the first child among all the children of that particular parent.<br>
+_In the sidebarContainer there will be now a child named sidebar-content. And it will be the first child among all the children of that particular parent._<br>
 
 ```js
 sidebarContainerR.insertAdjacentHTML('beforeend', HTMLR);
 ```
 
-In the sidebarContainer there will be now a child named sidebar-content. And it will be the last child among all the children of that particular parent.<br>
+_In the sidebarContainer there will be now a child named sidebar-content. And it will be the last child among all the children of that particular parent._<br>
 
 ```js
 sidebarContainerR.insertAdjacentHTML('beforebegin', HTMLR);
 ```
 
-Just before the sidebarContainer there will be now a new element named sidebar-content. And none of them have any child parent relationship.<br>
+_Just before the sidebarContainer there will be now a new element named sidebar-content. And none of them have any child parent relationship._<br>
 
 ```js
 sidebarContainerR.insertAdjacentHTML('afterend', HTMLR);
 ```
 
-Just after the sidebarContainer there will be now a new element named sidebar-content. And none of them have any child parent relationship.<br><br>
+_Just after the sidebarContainer there will be now a new element named sidebar-content. And none of them have any child parent relationship._<br><br>
 
 ### 🎯**Using innerHTML ::**<br><br>
 
@@ -161,9 +162,9 @@ This **=** will **overwrite** any previous **content** of that particular contai
 <hr>
 <hr>
 
-## ❓3️⃣ What is Event Bubbling and how does it work?<br><br>
+## 3️⃣❓What is Event Bubbling and how does it work?<br><br>
 
-✍🏻 <br>
+## ✍🏻 <br>
 
 ### **Event Bubbling ::**<br>
 
@@ -197,7 +198,7 @@ for example:
 
 <br>
 
-Here if we click on the button we'll see in our console that all **three console.log** has been published.<br><br>
+_Here if we click on the button we'll see in our console that all **three console.log** has been published._<br><br>
 
 ```text
 Child clicked
@@ -212,9 +213,9 @@ This happens because when we clicked on the button it **first goes to its parent
 <hr>
 <hr>
 
-## ❓4️⃣ What is Event Delegation in JavaScript? Why is it useful?<br><br>
+## 4️⃣❓What is Event Delegation in JavaScript? Why is it useful?<br><br>
 
-✍🏻<br>
+## ✍🏻<br>
 
 ### **Event Delegation ::**<br>
 
@@ -227,9 +228,9 @@ It helps us maintain our code, improves readability and also makes our code clea
 <hr>
 <hr>
 
-## ❓5️⃣ What is the difference between preventDefault() and stopPropagation() methods?<br><br>
+## 5️⃣❓What is the difference between preventDefault() and stopPropagation() methods?<br><br>
 
-✍🏻<br>
+## ✍🏻<br>
 
 ### 🎯**preventDefault() ::**
 
