@@ -1,4 +1,4 @@
-✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻<br>
+✍🏻<br>
 1️⃣ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
 ✅ <br>
@@ -45,8 +45,10 @@ const callBtnsR = document.querySelectorAll('.call-btnR');
 
 When selecting elements by querySelectorAll, we **have to write the css selector like . or #**<br>
 
-🔚
-✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻<br>
+<hr>
+<hr>
+
+✍🏻<br>
 2️⃣ How do you create and insert a new element into the DOM?<br>
 ✅ <br>
 We can create and insert a new element into the DOM in **three ways**:<br>
@@ -137,25 +139,23 @@ sidebarContainerR.innerHTML = '<h2>Adding Text using innerHTML</h2>';
 
 This **=** will **overwrite** any previous **content** of that particular container. If we **don't** want to **alter** the previous **content** we can add it like this **+=**. This **innerHTML** will be added as a **child** of the container and **sibling** to others **children** of it.<hr>
 
-🔚
-✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻<br>
+<hr>
+<hr>
+
+✍🏻<br>
 3️⃣ What is Event Bubbling and how does it work?
 ✅ <br>
 
-🔚
-✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻<br>
+<hr>
+<hr>
+
+✍🏻<br>
 4️⃣ What is Event Delegation in JavaScript? Why is it useful?
 ✅ <br>
 
-🔚
-✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻✍🏻<br>
+<hr>
+<hr>
+
+✍🏻<br>
 5️⃣ What is the difference between preventDefault() and stopPropagation() methods?
 ✅ <br>
-
-```
-
-```
-
-```
-
-```
