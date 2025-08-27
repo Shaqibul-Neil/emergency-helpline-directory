@@ -158,13 +158,13 @@ for example:
 ```html
 <div class="grandparent">
   <div class="parent">
-    <button class="child">Event Bubble</button>
+    <button id="child">Event Bubble</button>
   </div>
 </div>
 <script>
   const grandparent = document.querySelector('.grandparent');
   const parent = document.querySelector('.parent');
-  const child = document.querySelector('.child');
+  const child = document.querySelector('#child');
 
   grandparent.addEventListener('click', function () {
     console.log('Grandparent clicked');
@@ -181,7 +181,17 @@ for example:
 ```
 
 <br>
-Here if we click on the button we'll see in our console that all three console.log has been published. This happens because when we clicked on the button it first goes to its parent Div then to its grandparent and it continues to travel. This process is known as event bubbling.
+Here if we click on the button we'll see in our console that all three console.log has been published.<br>
+
+```text
+Child clicked
+Parent clicked
+Grandparent clicked
+```
+
+<br>
+
+This happens because when we clicked on the button it first goes to its parent Div then to its grandparent and it continues to travel. This process is known as event bubbling.
 
 <hr />
 <hr />
