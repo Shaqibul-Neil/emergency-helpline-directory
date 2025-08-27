@@ -26,12 +26,15 @@ body {
 }
 .container {
   margin: 0 8%;
+  max-width: 1400px;
 }
 
 /* ********************************************** */
 /* header start */
 .header {
-  margin: 5px 8%;
+  max-width: 1400px;
+  margin: 5px auto;
+  padding: 0 60px;
   height: 90px;
 }
 nav,
@@ -53,7 +56,7 @@ nav {
   gap: 10px;
 }
 .logo_img {
-  width: 150px;
+  width: 77px;
   height: 80px;
 }
 .logo_img img {
@@ -103,24 +106,19 @@ main {
 }
 /* banner start */
 .banner {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),
-    rgba(0, 103, 71, 1) 50%,
-    rgba(1, 50, 35, 1) 100%
-  );
+  background: linear-gradient(90deg, #013223, #006747 50%, #013223 100%);
 }
 .banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px;
 }
 .banner_img {
   width: 150px;
@@ -144,17 +142,19 @@ main {
 /* ********************************************** */
 /* directory start */
 .directory {
+  margin: auto;
+  padding: 10px 0 50px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 15px;
   width: 90%;
-  margin: auto;
 }
 /* ********************************************** */
 /* hotlines start */
 .hotlines {
   grid-column: span 9;
   display: grid;
+  order: 1;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
@@ -252,7 +252,8 @@ main {
 /* history start */
 .history {
   grid-column: span 3;
-  padding: 15px;
+  padding: 20px 15px;
+  order: 2;
   background-color: white;
   border-radius: 12px;
 }
@@ -265,6 +266,10 @@ main {
 .clear-btn {
   width: 90px;
 }
+/* .sidebar-container {
+  height: 100vh;
+  overflow-y: scroll;
+} */
 .sidebar-content {
   margin: 15px 0;
   padding: 20px;
