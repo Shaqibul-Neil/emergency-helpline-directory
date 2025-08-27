@@ -2,6 +2,7 @@
 const heartCount = document.querySelector('.heart-count');
 const coinCount = document.querySelector('.coin-count');
 const copyCount = document.querySelector('.copy-count');
+const hotlineNumbers = document.querySelectorAll('.hotline-number');
 const copyBtns = document.querySelectorAll('.btn-copy');
 const callBtns = document.querySelectorAll('.btn-call');
 const hotlineHearts = document.querySelectorAll('.hotline-heart');

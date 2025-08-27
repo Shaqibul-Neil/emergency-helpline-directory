@@ -14,4 +14,3 @@ clearBtn.addEventListener('click', function (e) {
   //removing history
   historyContainer.innerHTML = '';
 });
-console.log(sidebarContainer.children);
