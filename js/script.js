@@ -8,6 +8,8 @@ const hotlineHearts = document.querySelectorAll('.hotline-heart');
 const clearBtn = document.querySelector('.clear-btn');
 const sidebarContainer = document.querySelector('.sidebar-container');
 
+//TaskList
+//call button functionality ✅
+//heart icon functionality ✅
 //copy button functionality
-
-//sidebar clear button functionality
+//sidebar clear button functionality ✅
