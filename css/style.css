@@ -266,10 +266,7 @@ main {
 .clear-btn {
   width: 90px;
 }
-/* .sidebar-container {
-  height: 100vh;
-  overflow-y: scroll;
-} */
+
 .sidebar-content {
   margin: 15px 0;
   padding: 20px;
