@@ -52,9 +52,9 @@ We can create and insert a new element into the DOM in **three ways**:<br>
 ➡️**Using insertAdjacentHTML**<br><br>
 
 **At first create a html element**<br>
-🖊️const HTML = `
+```🖊️const HTML = `
 
-<div class="sidebar-content">
+```<div class="sidebar-content">
     <div class="history-hotline">
         <h4 class="history-title">${hotlineCenter}</h4>
         <p>${centerNumber}</p>
@@ -88,7 +88,7 @@ Just after the sidebarContainer there will be now a new element named sidebar-co
 
 **Then add the html using innerHTML**<br>
 🖊️sidebarContainer.innerHTML = '<h2>Adding Text using innerHTML</h2>';<br>
-This **=** will **overwrite** any previous **content** of that particular container. If we **don't** want to **alter** the previous **content** we can add it like this **+=**. This **innerHTML** will be added as a **child** of the container and **sibling** to others **children** of it.<br>
+This **=** will **overwrite** any previous **content** of that particular container. If we **don't** want to **alter** the previous **content** we can add it like this **+=**. This **innerHTML** will be added as a **child** of the container and **sibling** to others **children** of it.<hr>
 
 📝📝📝📝📝📝📝📝📝
 3️⃣ What is Event Bubbling and how does it work?
@@ -101,3 +101,4 @@ This **=** will **overwrite** any previous **content** of that particular contai
 📝📝📝📝📝📝📝📝📝
 5️⃣ What is the difference between preventDefault() and stopPropagation() methods?
 ✅ <br>
+```
