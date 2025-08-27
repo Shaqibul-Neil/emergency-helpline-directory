@@ -1,6 +1,6 @@
 1️⃣ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-➡️➡️
+➡️➡️ <br>
 🎯**getElementById**: It selects a single element based on the unique name of the id attribute on the html.
 for example:
 const callBtn = document.getElementById('call-btn');
