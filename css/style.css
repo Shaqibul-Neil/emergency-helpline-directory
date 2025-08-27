@@ -111,7 +111,7 @@ nav {
   background-position: 0% 50%;
   border: 1px solid transparent;
   animation: revolve 5s linear infinite;
-  transition: all 0.33s;
+  transition: all 0.5s;
 }
 
 /* ********************************************** */
@@ -170,7 +170,7 @@ main {
   display: grid;
   order: 1;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 12px;
 }
 
 .hotline-column {
@@ -195,18 +195,20 @@ main {
   transition: all 0.33s;
 }
 @keyframes shake {
-  0%,
-  100% {
+  0% {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(-0.2px);
+    transform: translateX(-0.25px);
   }
   50% {
     transform: translateX(0px);
   }
   75% {
-    transform: translateX(0.2px);
+    transform: translateX(0.25px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 .hotline-heart i {
