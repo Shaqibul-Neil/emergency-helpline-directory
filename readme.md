@@ -52,9 +52,11 @@ We can create and insert a new element into the DOM in **three ways**:<br>
 ➡️**Using insertAdjacentHTML**<br><br>
 
 **At first create a html element**<br>
-```🖊️const HTML = `
 
-```<div class="sidebar-content">
+```js
+🖊️const HTML = `
+
+<div class="sidebar-content">
     <div class="history-hotline">
         <h4 class="history-title">${hotlineCenter}</h4>
         <p>${centerNumber}</p>
@@ -63,6 +65,7 @@ We can create and insert a new element into the DOM in **three ways**:<br>
         <p class="date">${new Date().toLocaleTimeString()}</p>
     </div>
 </div>`
+```
 
 **Then select the parent element where you want to insert this html**<br>
 🖊️const sidebarContainer = document.getElementById('sidebar-container');<br>
@@ -101,4 +104,7 @@ This **=** will **overwrite** any previous **content** of that particular contai
 📝📝📝📝📝📝📝📝📝
 5️⃣ What is the difference between preventDefault() and stopPropagation() methods?
 ✅ <br>
+
+```
+
 ```
