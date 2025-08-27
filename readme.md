@@ -1,7 +1,6 @@
-✍🏻<br>
-1️⃣ What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?<br><br>
+❓1️⃣What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?<br><br>
 
-✅ <br>
+✍🏻 <br>
 🎯**getElementById**:<br><br> It selects a **single element** based on the unique **name of the id attribute** on the html.<br>
 for example:<br>
 
@@ -48,9 +47,8 @@ When selecting elements by querySelectorAll, we **have to write the css selector
 <hr>
 <hr>
 
-✍🏻<br>
-2️⃣ How do you create and insert a new element into the DOM?<br><br>
-✅ <br>
+❓2️⃣ How do you create and insert a new element into the DOM?<br><br>
+✍🏻 <br>
 We can create and insert a new element into the DOM in **three ways**:<br>
 🎯**Using Create element**:<br><br>
 
@@ -133,7 +131,7 @@ sidebarContainerR.insertAdjacentHTML('afterend', HTMLR);
 
 Just after the sidebarContainer there will be now a new element named sidebar-content. And none of them have any child parent relationship.<br><br>
 
-🎯**Using innerHTML**<br>
+🎯**Using innerHTML**<br><br>
 
 **At first select the parent element where you want to insert this html**<br>
 
@@ -152,20 +150,52 @@ This **=** will **overwrite** any previous **content** of that particular contai
 <hr>
 <hr>
 
-✍🏻<br>
-3️⃣ What is Event Bubbling and how does it work?<br><br>
-✅ <br>
+❓3️⃣ What is Event Bubbling and how does it work?<br><br>
+✍🏻 <br>
+**Event Bubbling** is the technique where when an **event** like click, keydown etc on a **child** element, the event will automatically **travel** to its **parent** and then it will **continue** its journey until it reaches the **root of the document**. It bubbles up from the child to the parent to the grandparent and so on and so on. **Default behavior** of javascript is event bubbling.<br>
+for example:
 
-<hr>
-<hr>
+```html
+<div class="grandparent">
+  <div class="parent">
+    <button class="child">Event Bubble</button>
+  </div>
+</div>
+<script>
+  const grandparent = document.querySelector('.grandparent');
+  const parent = document.querySelector('.parent');
+  const child = document.querySelector('.child');
 
-✍🏻<br>
-4️⃣ What is Event Delegation in JavaScript? Why is it useful?<br><br>
-✅ <br>
+  grandparent.addEventListener('click', function () {
+    console.log('Grandparent clicked');
+  });
 
-<hr>
-<hr>
+  parent.addEventListener('click', function () {
+    console.log('Parent clicked');
+  });
 
-✍🏻<br>
-5️⃣ What is the difference between preventDefault() and stopPropagation() methods?<br><br>
-✅ <br>
+  child.addEventListener('click', function () {
+    console.log('Child clicked');
+  });
+</script>
+```
+
+<br>
+Here if we click on the button we'll see in our console that all three console.log has been published. This happens because when we clicked on the button it first goes to its parent Div then to its grandparent and it continues to travel. This process is known as event bubbling.
+
+<hr />
+<hr />
+
+❓4️⃣ What is Event Delegation in JavaScript? Why is it useful?<br /><br />
+✍🏻<br />
+
+<hr />
+<hr />
+
+❓5️⃣ What is the difference between preventDefault() and stopPropagation()
+methods?<br /><br />
+✍🏻<br />
+
+```
+
+```
