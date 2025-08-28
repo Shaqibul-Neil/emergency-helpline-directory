@@ -308,4 +308,4 @@ for example:
 
 _Here we used e.stopPropagation() in the child as a result when we click on the child it wont bubble up to its parent and in console we'll only see one log has been published_
 
-### ------------------------------------------------ **THE END** ------------------------------------------------
+### --------------------------------------------- **THE END** ----------------------------------------------
