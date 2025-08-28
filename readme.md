@@ -252,7 +252,7 @@ for example:
 </script>
 ```
 
-_Here Instead of selecting all the <a> links we add event listener in the grand parent <ul> who listens for the event. This way even of we add another <a> in the <ul> we wont have to modify our code. Then we check where the event actually fired using e.target. e.target is the position where the user clicked. We are checking whether e.target is the place that contains the class or not._
+_Here Instead of selecting all the a links we add event listener in the grand parent ul who listens for the event. This way even of we add another a in the ul we wont have to modify our code. Then we check where the event actually fired using e.target. e.target is the position where the user clicked. We are checking whether e.target is the place that contains the class or not._
 
 <br>
 
@@ -308,4 +308,4 @@ for example:
 
 _Here we used e.stopPropagation() in the child as a result when we click on the child it wont bubble up to its parent and in console we'll only see one log has been published_
 
-### ---------------------------- **THE END**----------------------------
+### ---------------------------------------- **THE END**------------------------------------
