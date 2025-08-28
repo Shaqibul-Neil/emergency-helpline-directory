@@ -241,17 +241,18 @@ for example:
   </ul>
 </nav>
 <script>
-  //*Instead of selecting all the <a> links we add event listener in the grand parent <ul> who listens for the event. This way even of we add another <a> in the <ul> we wont have to modify our code.*
   document.querySelector('.nav__links').addEventListener('click', function (e) {
-    //stop default behavior
     e.preventDefault();
-    // then we check where the event actually fired using matching strategy (event delegation). e.target is the position where the user clicked.
-    if (e.target.classList.contains('nav__link')) {
-      console.log('child clicked');
+    if (e.target.classList.contains(nav__link)) {
+      console.log('Link clicked');
+    } else {
+      console.log('Link is not clicked');
     }
   });
 </script>
 ```
+
+_Here Instead of selecting all the <a> links we add event listener in the grand parent <ul> who listens for the event. This way even of we add another <a> in the <ul> we wont have to modify our code. Then we check where the event actually fired using e.target. e.target is the position where the user clicked. We are checking whether e.target is the place that contains the class or not._
 
 <br>
 
@@ -273,4 +274,38 @@ for example: <br>
 
 _In the previous event delegation example where after adding the event listener in the parent we wrote e.preventDefault(). As a result the default behavior of the clicking on a link like going to other page or reload has been stopped and we can add our operational codes in it._
 
-### 🎯**stopPropagation() ::**
+### 🎯**stopPropagation() ::**<br><br>
+
+We know when an event occurs, it generally bubbles up to its parent and it is the default behavior which is known as Event bubbling. The opposite of this behavior is called Event capturing which is when an event occurs the traveling is not upwards rather downwards. That means the event comes from the root of the document to grand parent to parent to child. So to **stop** these kind of **traveling upwards and downwards** along the **DOM** we use **stopPropagation()**. If we use it then the event wont propagate further from its position to neither parent nor ancestor.<br>
+
+for example:
+
+```html
+<div class="grandparent">
+  <div class="parent">
+    <button id="child">Event Bubble</button>
+  </div>
+</div>
+<script>
+  const grandparent = document.querySelector('.grandparent');
+  const parent = document.querySelector('.parent');
+  const child = document.querySelector('#child');
+
+  grandparent.addEventListener('click', function () {
+    console.log('Grandparent clicked');
+  });
+
+  parent.addEventListener('click', function () {
+    console.log('Parent clicked');
+  });
+
+  child.addEventListener('click', function (e) {
+    e.stopPropagation();
+    console.log('Child clicked');
+  });
+</script>
+```
+
+_Here we used e.stopPropagation() in the child as a result when we click on the child it wont bubble up to its parent and in console we'll only see one log has been published_
+
+### ---------------------------- **THE END**----------------------------
