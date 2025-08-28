@@ -168,7 +168,7 @@ This **=** will **overwrite** any previous **content** of that particular contai
 
 ### **Event Bubbling ::**<br>
 
-Event Bubbling is the technique where when an **event** like click, keydown etc on a **child** element, the event will automatically **travel** to its **parent** and then it will **continue** its journey until it reaches the **root of the document**. It bubbles up from the child to the parent to the grandparent and so on and so on. **Default behavior** of javascript is event bubbling.<br>
+Event Bubbling is the technique where when an **event** like click, keydown etc happen on a **child** element, the event will automatically **travel** to its **parent** and then it will **continue** its journey until it reaches the **root of the document**. It bubbles up from the child to the parent to the grandparent and so on and so on. **Default behavior** of javascript is event bubbling.<br>
 for example:
 
 ```html
@@ -208,7 +208,7 @@ Grandparent clicked
 
 <br>
 
-This happens because when we clicked on the button it **first goes to its parent** Div **then** to its **grandparent** and it **continues** to travel. This process is known as **event bubbling**.
+This happens because when we clicked on the button it **first goes to its parent** Div **then** to its **grandparent** and it **continues** to travel upwards. This process is known as **event bubbling**.
 
 <hr>
 <hr>
@@ -219,7 +219,41 @@ This happens because when we clicked on the button it **first goes to its parent
 
 ### **Event Delegation ::**<br>
 
-Delegation means to **transfer the responsibility** of a task from **one person to another**. So in Javascript, Event Delegation is an event being delegated from **child to it's parent**. **Parent** Element **handles** the event of **all its children**. Like if we had **multiple children** and all of them are **bound to some events** then we **don't add event listener** to all of the children instead we add **one event listener to the parent**, who in turns **listens** for the event in the **children**. We can **access** exactly where the **event fired** by using **e.target**. It will give the exact element where the event occurred.<br><br>
+Delegation means to **transfer the responsibility** of a task from **one person to another**. So in Javascript, Event Delegation is an event being delegated from **child to it's parent**. **Parent** Element **handles** the event of **all its children**. Like if we had **multiple children** and all of them are **bound to some events** then we **don't add event listener** to all of the children instead we add **one event listener to the parent**, who in turns **listens** for the event in the **children**. We can **access** exactly where the **event fired** by using **e.target**. It will give the exact element where the event occurred.<br>
+
+for example:
+
+```html
+<nav class="nav">
+  <ul class="nav__links">
+    <li class="nav__item">
+      <a class="nav__link" href="#section--1">Features</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#section--2">Operations</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#section--3">Testimonials</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#section--4">Open account</a>
+    </li>
+  </ul>
+</nav>
+<script>
+  //*Instead of selecting all the <a> links we add event listener in the grand parent <ul> who listens for the event. This way even of we add another <a> in the <ul> we wont have to modify our code.*
+  document.querySelector('.nav__links').addEventListener('click', function (e) {
+    //stop default behavior
+    e.preventDefault();
+    // then we check where the event actually fired using matching strategy (event delegation). e.target is the position where the user clicked.
+    if (e.target.classList.contains('nav__link')) {
+      console.log('child clicked');
+    }
+  });
+</script>
+```
+
+<br>
 
 ### 🎯**Why is it useful ::**<br><br>
 
@@ -232,6 +266,11 @@ It helps us maintain our code, improves readability and also makes our code clea
 
 ## ✍🏻<br>
 
-### 🎯**preventDefault() ::**
+### 🎯**preventDefault() ::**<br><br>
 
-### 🎯**preventDefault() ::**
+To **stop a browser's default behavior** we use preventDefault(). Like if we had a form in our html and a **submit button**, the **default behavior** of that button is to **reload** the page. So when we use **preventDefault()** on that specific button for **click** event it **stops** its **default** action.<br>
+for example: <br>
+
+_In the previous event delegation example where after adding the event listener in the parent we wrote e.preventDefault(). As a result the default behavior of the clicking on a link like going to other page or reload has been stopped and we can add our operational codes in it._
+
+### 🎯**stopPropagation() ::**
